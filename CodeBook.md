@@ -137,7 +137,7 @@ Variables in the Final Tidy Dataset “tidy.dataset.txt”
 - Label (numeric): this is the numeric activity label associated with the ActivityName  
 - ActivityName (varchar): this is the name of six activity types
 - SubjectID (numeric): this is the subject ID, i.e. from 1 to 30 subjects
-- Flag (varchar): this is to identify/distinguish train from test subjects 
+- flag (varchar): this is to identify/distinguish train from test subjects 
 
 # Measures (all numeric): 
 
