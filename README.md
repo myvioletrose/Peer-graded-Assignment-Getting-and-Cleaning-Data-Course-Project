@@ -56,9 +56,15 @@ Notes:
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
-Data cleaning process: 
+Data getting & cleaning process: 
 ======
-- 
+- before we begin, we created and set the appropriate working directory, download and then unzip the zip files from the URL provided on the assignment sheet
+- first, we merged the train and test data sets into one. A "flag" column was added to distinguish train and test subjects 
+- second, only the measurements that pertained with "mean" or "std" were extracted from the data set. the second data set also included "SubjectID", "Label", and "flag" columns 
+- third, activity label was added to this data set (by using a cross-join)
+- fourth, we removed the () from the data set headers; we tried to do upper case of the header but the original seemed to look better
+- fifth, we reshaped the data set. we first melted it and then we dcasted it in order to create a tidy data set with the mean of each variable for each activity and each subject
+- finally, we exported this tidy set and writing it into txt file
 
 For more information, please refer to the CodeBook.md and run_analysis.R 
 
